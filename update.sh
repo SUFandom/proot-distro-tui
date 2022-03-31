@@ -11,7 +11,7 @@ cat AgDhMRQD
 sleep 5
 clear
 
-if (grep -i "Version:1.0" AgDhMRQD)
+if (grep -i "Version:1.1" AgDhMRQD)
 then
 clear
 rm -rf "AgDhMRQD"
