@@ -1,0 +1,8 @@
+Uninstall Distro
+
+Here you can Uninstall Distro that
+You may not be using anymore..
+
+Select your distro to be remove and it 
+will be cleared..
+

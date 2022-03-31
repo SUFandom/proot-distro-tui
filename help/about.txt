@@ -1,0 +1,13 @@
+Proot-distro
+
+About Text
+
+============================
+Version :1.0
+
+Author: SUFandom
+
+Codename: Nino
+============================
+
+Fork Info (Enter info here if you're the Forker):

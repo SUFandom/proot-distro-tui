@@ -1,0 +1,11 @@
+Update GIT
+
+The servers that im using to fetch Updates are
+pastebin.com.. So if Pastebin Crashes, message
+may appear to update..
+and then proceeded to clone a git.
+
+Look Guys, i cant buy Linode Servers, im poor
+
+This is still bugged. i dont have any options
+either.

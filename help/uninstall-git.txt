@@ -1,0 +1,13 @@
+Uninstall GIT
+
+This area will try to uninstall
+this GIT
+
+You will be met by a Dialog that will 
+try to remove the Script (Uninstaller works -
+When on $HOME Directory)
+
+Continuing the Removal will then make the
+current Version be deleted.. Older ones at your
+$HOME Dir will be stuck so you
+have to rm them..

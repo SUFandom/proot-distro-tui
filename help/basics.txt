@@ -1,0 +1,35 @@
+Welcome to Basics Area,
+
+This Area is a Basic Text Help area
+
+1.) Introduction
+This script will be easier to use because
+no hassle of Typing Much as always.
+
+2.) License
+This Code is within GPL 3.0, Here's the simplified 
+Version:
+1. Anyone can copy, modify and distribute this software.
+2. You have to include the license and 
+copyright notice with each and every distribution.
+3. You can use this software privately.
+4. You can use this software for commercial purposes.
+5. If you dare build your business solely from this 
+code, you risk open-sourcing the whole code base.
+6. If you modify it, you have to indicate 
+changes made to the code.
+7. Any modifications of this code base MUST 
+be distributed with the same license, GPLv3.
+8. This software is provided without warranty.
+9. The software author or license can not be held 
+liable for any damages inflicted by the software.
+
+USING THIS SCRIPT MEANS YOU AGREE TO THE GPL 3.0
+
+
+GPU SUPPORT
+MALI, POWERVR AREN'T SUPPORTED ALL ACROSS THE
+LINUX DISTRO HERE EXCEPT ADRENO (BRUH) SO IN THAT CASE
+USE "LIBGL_ALWAYS_SOFTWARE=1" IN THE BEGINNING
+OF THE COMMAND AND 3D RENDERING IS ON CPU
+
