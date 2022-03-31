@@ -44,3 +44,11 @@ This Repo is under GPL 3.0. Anyone Can Have a Copy and customize, but Users have
 ## Problems
 
 Check Issues Page. Spam there..
+
+## Updates!🔧
+
+1.1:
+
+![update image slot](img-src/upd1.1.jpg)
+
+Tweaking update starter script

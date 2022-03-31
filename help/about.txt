@@ -3,7 +3,7 @@ Proot-distro
 About Text
 
 ============================
-Version :1.0
+Version :1.1
 
 Author: SUFandom
 
@@ -11,3 +11,13 @@ Codename: Nino
 ============================
 
 Fork Info (Enter info here if you're the Forker):
+
+FORK VERSION:
+
+FORK AUTHOR:
+
+FORK GIT LINK:
+
+CODENAME FORK:
+
+=================================
