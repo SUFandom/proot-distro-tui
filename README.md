@@ -47,8 +47,29 @@ Check Issues Page. Spam there..
 
 ## Updates!🔧
 
-1.1:
+1.5:
 
-![update image slot](img-src/upd1.1.jpg)
+Extreme Hotfix to the Codes that were giving headaches towards end-users.
 
-Tweaking update starter script
+Adjusted Gradients for ` tput ` system thanks to this gradient test!
+
+```
+
+#!/bin/bash
+color(){
+    for c; do
+        printf '\e[48;5;%dm%03d' $c $c
+    done
+    printf '\e[0m \n'
+}
+
+IFS=$' \t\n'
+color {0..15}
+for ((i=0;i<6;i++)); do
+    color $(seq $((i*36+16)) $((i*36+51)))
+done
+color {232..255}
+
+```
+
+thanks stackoverflow lol

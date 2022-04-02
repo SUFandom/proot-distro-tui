@@ -9,3 +9,5 @@ Look Guys, i cant buy Linode Servers, im poor
 
 This is still bugged. i dont have any options
 either.
+
+I also advice to update the script if its available

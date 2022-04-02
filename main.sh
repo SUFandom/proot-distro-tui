@@ -21,7 +21,6 @@ display_src() {
 }
 
 #Code
-while true; do
 tput civis
 exec 3>&1
 menu=$( dialog \
@@ -77,6 +76,7 @@ case $menu in
  sh uninstall.sh
  ;;
  6)
+ #Hey Forker! Change this to your info. but at help/about.text, only type the fields recommend there
  output=$(echo "Version 1.0 , Under GPL 3.0. \
    It Perfectly Runs on Dialog \
    Author: SUFandom \
@@ -84,6 +84,6 @@ case $menu in
    Link (YT): https://bit.ly/BlzYT_SUF \
    Reddit: https://reddit.com/u/itsfreepizza " )
  display_src "About"
+ sh main.sh
  ;;
  esac
-done
