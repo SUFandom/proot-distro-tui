@@ -28,7 +28,7 @@ Each Distro is given information about themselves..
 
 ``` 
 
-chmod +x onetime.sh && ./onetime.sh 
+chmod +x onetime.sh && sh onetime.sh 
 
 ```
 
@@ -47,29 +47,20 @@ Check Issues Page. Spam there..
 
 ## Updates!🔧
 
-1.5:
+1.6.177013:
 
-Extreme Hotfix to the Codes that were giving headaches towards end-users.
+Fix the script Runtime by removing `sh` and use `./` instead, it will then rely at `#!/bin/env bash`, not `sh` to continue
 
-Adjusted Gradients for ` tput ` system thanks to this gradient test!
+Updaters are fixed... *maybe*
 
-```
+In the future there will be option to not back up the old version while updating.
 
-#!/bin/bash
-color(){
-    for c; do
-        printf '\e[48;5;%dm%03d' $c $c
-    done
-    printf '\e[0m \n'
-}
+Fix Debian when exiting the info, gets prompt `go.sh: command not found`
 
-IFS=$' \t\n'
-color {0..15}
-for ((i=0;i<6;i++)); do
-    color $(seq $((i*36+16)) $((i*36+51)))
-done
-color {232..255}
+Remove `egg.bf` 
 
-```
+## SUGGESTIONS
 
-thanks stackoverflow lol
+[**XSDL BY PELYA**](https://play.google.com/store/apps/details?id=x.org.server)
+
+When Attempting to use X11, use XSDL with Pulseaudio support

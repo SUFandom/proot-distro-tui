@@ -39,13 +39,14 @@ chmod +x utils/unins-phs1.sh
 chmod +x utils/unins-true.sh
 chmod +x utils/upd-true.sh
 echo -ne '[################  ] [097%] \r'
+clear
 echo "Finalizing"
 apt update
-apt install dialog proot-distro -y
+apt install bash dialog proot-distro -y
 clear
 sleep 1
-echo -ne  '[##################] [100%] \r'
-echo "Complete..., If there's errors, Try to check manually and report. , Next Run you can only execute : main.sh to continue using"
+echo   "[##################] [100%]"
+echo "$(tput setaf 2)Complete..., If there's errors, Try to check manually and report. , Next Run you can only execute : main.sh to continue using$(tput sgr0)"
 tput cnorm
 clear
-sh main.sh
+./!main.sh

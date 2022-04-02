@@ -46,7 +46,7 @@ case $exitvalue in
  ;;
  $DIALOG_HELP)
  tput cnorm
- sh help.sh 
+ ./help.sh 
  ;;
  $DIALOG_ESC)
  clear
@@ -57,23 +57,23 @@ esac
 case $menu in
  1)
  tput cnorm
- sh go.sh
+ ./go.sh
  ;;
  2)
  tput cnorm
- sh rm.sh
+ ./rm.sh
  ;;
  3)
  tput cnorm 
- sh help.sh 
+ ./help.sh 
  ;;
  4)
  tput cnorm
- sh update.sh
+ ./update.sh
  ;;
  5)
  tput cnorm
- sh uninstall.sh
+ ./uninstall.sh
  ;;
  6)
  #Hey Forker! Change this to your info. but at help/about.text, only type the fields recommend there
@@ -84,6 +84,6 @@ case $menu in
    Link (YT): https://bit.ly/BlzYT_SUF \
    Reddit: https://reddit.com/u/itsfreepizza " )
  display_src "About"
- sh main.sh
+ ./main.sh
  ;;
  esac
