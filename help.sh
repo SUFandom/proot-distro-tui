@@ -17,7 +17,6 @@ TITLE_UX_GIT="UNINSTALL GIT HELP"
 TITLE_UX_DISTRO="UNINSTALL DISTRO"
 TITLE_UPD="UPDATE GIT HELP"
 #CODE
-while true ; do
 exec 3>&1
 HLP=$( dialog --backtitle "$BK"  \
   --title "$TITLE_UNO" \
@@ -34,7 +33,7 @@ exits=$?
 exec 3>&-
 case $exits in
  $DIALOG_CANCEL)
- sh main.sh
+  ./main.sh
  ;;
  $DIALOG_ESC)
  clear
@@ -45,21 +44,26 @@ case $exits in
  case $HLP in
  1)
  dialog --backtitle "$BK" --title "$TITLE_BASIC" --textbox help/about.txt 30 65
+ ./help.sh
  ;;
  2)
  dialog --backtitle "$BK" --title "$TITLE_BASIC" --textbox help/basics.txt 30 65
+ ./help.sh
  ;;
  3)
  dialog --backtitle "$BK" --title "$TITLE_DISTRO" --textbox help/distros.txt 30 65
+ ./help.sh
  ;;
  4)
  dialog --backtitle "$BK" --title "$TITLE_UX_GIT" --textbox help/uninstall-git.txt 30 65
+ ./help.sh
  ;;
  5)
  dialog --backtitle "$BK" --title "$TITLE_UX_DISTRO" --textbox help/uninstall.txt 30 65
+ ./help.sh
 ;;
 6)
  dialog --backtitle "$BK" --title "$TITLE_UPD" --textbox help/update-git.txt 30 65
+ ./help.sh
  ;;
  esac
- done

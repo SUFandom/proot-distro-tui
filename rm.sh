@@ -11,7 +11,6 @@
 
 # Code
 tput civis
-while true ; do
 exec 3>&1
 UX=$( dialog --backtitle "Remove" \
   --title "Remove a Distro" \
@@ -33,7 +32,7 @@ exec 3>&-
 case $exitvariable in
 $DIALOG_CANCEL)
 tput cnorm
- sh main.sh
+ ./main.sh
  ;;
  $DIALOG_ESC)
  echo "$(tput setaf 1)Hard Exit Mode, Exit Code $exitvariable..$(tput sgr0)"
@@ -46,57 +45,70 @@ tput cnorm
  if ( dialog --backtitle "Oh no\!" --title "Are you Sure?" --yes-label "Remove it\!" --no-label "Back" --yesno "Are you sure to Remove Alpine?" 0 0 )
  then
  tput cnorm 
- sh runtime/undistro/alpine.sh
+ ./runtime/undistro/alpine.sh
+ else
+ ./rm.sh
  fi
  ;;
  2)
  if ( dialog --backtitle "Oh no\!" --title "Are you sure?" --yes-label "Remove it\!" --no-label "Back" --yesno "Are you sure to Remove Arch Linux?" 0 0 )
  then 
 tput cnorm
-sh runtime/undistro/arch.sh
+./runtime/undistro/arch.sh
+else
+./rm.sh
 fi
 ;;
 3) 
 if (dialog --backtitle "Oh no\!" --title "Are you sure?" --yes-label "Remove it\!" --no-label "Back" --yesno "Are you sure to Remove Debian?" 0 0 )
 then
 tput cnorm
-sh runtime/undistro/debian.sh
+./runtime/undistro/debian.sh
+else
+./rm.sh
 fi 
 ;;
 4)
 if (dialog --backtitle "Oh no\!" --title "Are you sure?" --yes-label "Remove it\!" --no-label "Back" --yesno "Are you sure to Remove Fedora?" 0 0 )
 then
 tput cnorm
-sh runtime/undistro/fedora.sh
+./runtime/undistro/fedora.sh
 fi 
 ;;
 5)
 if (dialog --backtitle "Oh no\!" --title "Are you sure?" --yes-label "Remove it\!" --no-label "Back" --yesno "Are you sure to Remove Manjaro?" 0 0 )
 then
 tput cnorm
-sh runtime/undistro/fedora.sh 
+./runtime/undistro/fedora.sh 
+else
+./rm.sh
 fi 
 ;;
 6)
 if (dialog --backtitle "Oh no\!" --title "Are you sure?" --yes-label "Remove it\!" --no-label "Back" --yesno "Are you sure to Remove Opensuse?" 0 0 )
 then
 tput cnorm
-sh runtime/undistro/opensuse.sh 
+./runtime/undistro/opensuse.sh 
+else
+./rm.sh
 fi
 ;;
 7)
 if (dialog --backtitle "Oh no\!" --title "Are you sure?" --yes-label "Remove it\!" --no-label "Back" --yesno "Are you sure to Remove Ubuntu?" 0 0 )
 then
 tput cnorm
-sh runtime/undistro/ubuntu.sh 
+./runtime/undistro/ubuntu.sh
+else
+./rm.sh
 fi
 ;;
 8)
 if (dialog --backtitle "Oh no\!" --title "Are you sure?" --yes-label "Remove it\!" --no-label "Back" --yesno "Are you sure to Remove Void?" 0 0 )
 then 
 tput cnorm
-sh runtime/undistro/void.sh
+./runtime/undistro/void.sh
+else
+./rm.sh
 fi 
 ;;
 esac 
-done

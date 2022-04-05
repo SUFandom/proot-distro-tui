@@ -47,17 +47,11 @@ Check Issues Page. Spam there..
 
 ## Updates!🔧
 
-1.6.177013:
+1.7:
 
-Fix the script Runtime by removing `sh` and use `./` instead, it will then rely at `#!/bin/env bash`, not `sh` to continue
+Fix Loops under Uninstall Distro amd Help.
 
-Updaters are fixed... *maybe*
 
-In the future there will be option to not back up the old version while updating.
-
-Fix Debian when exiting the info, gets prompt `go.sh: command not found`
-
-Remove `egg.bf` 
 
 ## SUGGESTIONS
 

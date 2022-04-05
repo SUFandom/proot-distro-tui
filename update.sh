@@ -11,11 +11,12 @@ cat AgDhMRQD
 sleep 5
 clear
 
-if (grep -i "Version:1.6.177013" AgDhMRQD)
+if (grep -i "Version:1.7" AgDhMRQD)
 then
 clear
 rm -rf "AgDhMRQD"
 echo "$(tput setaf 34) Proot-distro TUI Package Up-to-date.. $(tput sgr0)"
+sleep 3
 exit 0
 else
 rm -rf "AgDhMRQD"
