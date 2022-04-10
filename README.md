@@ -28,7 +28,7 @@ Each Distro is given information about themselves..
 
 ``` 
 
-chmod +x onetime.sh && sh onetime.sh 
+chmod +x onetime.sh && ./onetime.sh 
 
 ```
 
@@ -47,14 +47,19 @@ Check Issues Page. Spam there..
 
 ## Updates!🔧
 
-1.7:
+1.8:
 
-Fix Loops under Uninstall Distro amd Help.
+Fix `onetime.sh` execution
 
+Version ID on `main.sh` fixed!
 
 
 ## SUGGESTIONS
 
 [**XSDL BY PELYA**](https://play.google.com/store/apps/details?id=x.org.server)
 
-When Attempting to use X11, use XSDL with Pulseaudio support
+When Attempting to use X11, use XSDL with Pulseaudio support for better Experience
+
+## Notice
+
+Updates may be getting slower soon, Heads up! Because of the Ramadan Season.

@@ -46,7 +46,7 @@ apt install bash dialog proot-distro -y
 clear
 sleep 1
 echo   "[##################] [100%]"
-echo "$(tput setaf 2)Complete..., If there's errors, Try to check manually and report. , Next Run you can only execute : main.sh to continue using$(tput sgr0)"
+echo "$(tput setaf 2)Complete..., If there's errors, Try to check manually and report. , Next Run you can only execute : ./main.sh to continue using$(tput sgr0)"
 tput cnorm
 clear
-./!main.sh
+./main.sh

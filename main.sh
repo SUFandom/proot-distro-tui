@@ -77,7 +77,7 @@ case $menu in
  ;;
  6)
  #Hey Forker! Change this to your info. but at help/about.text, only type the fields recommend there
- output=$(echo "Version 1.0 , Under GPL 3.0. \
+ output=$(echo "Version 1.8 , Under GPL 3.0. \
    It Perfectly Runs on Dialog \
    Author: SUFandom \
    Creator: SUFandom \
