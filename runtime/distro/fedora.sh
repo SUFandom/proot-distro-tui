@@ -1,6 +1,6 @@
 #!/bin/env bash
-tput civis
+tput cnorm
+termux-toast -g top -b blue -c white "Fedora Running"
 proot-distro install fedora
 proot-distro login fedora
-tput cnorm
 exit 0

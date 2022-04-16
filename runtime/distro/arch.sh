@@ -1,8 +1,8 @@
 #!/bin/env bash
 clear
-tput civis
-
+tput cnorm
+termux-toast -b blue -c white -g top "Arch Linux Running"
 proot-distro install archlinux
 proot-distro login archlinux
-tput cnorm
+
 exit 0

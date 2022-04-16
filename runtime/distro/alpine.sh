@@ -8,8 +8,8 @@
 : ${DIALOG_ESC=255}
 #Code
 clear
-tput civis
+termux-toast -g top -b white -c black "Alpine OS Running"
+tput cnorm
 proot-distro install alpine
 proot-distro login alpine
-tput cnorm
 exit 0

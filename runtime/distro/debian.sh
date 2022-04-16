@@ -1,6 +1,7 @@
 #!/bin/env bash
-tput civis
+termux-toast -g top -b red -c white "Debian Now Running"
+tput cnorm
 proot-distro install debian
 proot-distro login debian
-tput cnorm 
+
 exit 0

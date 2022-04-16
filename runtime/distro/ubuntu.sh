@@ -1,6 +1,6 @@
 #!/bin/env bash
-tput civis
+termux-toast -g top -b orange -c white "Ubuntu (Debian) Running"
+tput cnorm
 proot-distro install ubuntu
 proot-distro login ubuntu
-tput cnorm
 exit 0

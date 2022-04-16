@@ -1,5 +1,9 @@
 # proot-distro-TUI
 
+### Banners/Badges
+
+![codename](https://img.shields.io/badge/codename-Nino-red?style=for-the-badge&logo=appveyor) ![updm](https://img.shields.io/website?down_color=red&down_message=update%20service%20unavailable&style=for-the-badge&up_color=green&up_message=update%20service%20online&url=https%3A%2F%2Fpastebin.com%2Fraw%2FAgDhMRQD) ![rel](https://img.shields.io/badge/release-stable-green?style=for-the-badge&logo=appveyor)
+
 ![banner](img-src/banner.png)
 
 "A TUI Manager for proot-distro" 
@@ -32,11 +36,6 @@ chmod +x onetime.sh && ./onetime.sh
 
 ```
 
-if having issues exiting, spam esc a lot..it helps. is that, the 
-
-``` while true ; do ``` looped too hard. ill soon find the way how to fix that one, or use some forked version of this..  (If someone does...)
-
-
 ## License
 
 This Repo is under GPL 3.0. Anyone Can Have a Copy and customize, but Users have to Stick it to GPL 3.0
@@ -47,12 +46,15 @@ Check Issues Page. Spam there..
 
 ## Updates!🔧
 
-1.8:
+1.9:
 
-Fix `onetime.sh` execution
+- Added `termux-toast` function when launching distro
+- Script will look for `termux-api` package. Install by this command: `apt install termux-api -y`
 
-Version ID on `main.sh` fixed!
+**Future:**
 
+- [✓] Making Termux:API present in Version `2.0`, i think.
+- [✓] Install Termux:API Here: [Link](https://github.com/termux/termux-api)
 
 ## SUGGESTIONS
 
