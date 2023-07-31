@@ -10,6 +10,10 @@
 
 It Runs on Dialog
 
+**NOTE**
+
+Please Grab [PRoot-distro-tui-u](https://github.com/SUFandom/proot-distro-tui-u) for better features while in beta
+
 ## A better tool to Start your Distro on Termux!
 
 A Neat TUI Filled with Necessary Options
@@ -40,11 +44,13 @@ chmod +x onetime.sh && ./onetime.sh
 
 This Repo is under GPL 3.0. Anyone Can Have a Copy and customize, but Users have to Stick it to GPL 3.0
 
-## Problems
 
-Check Issues Page. Spam there..
+## Update
 
-## Updates!🔧
+1.9.1:
+
+- Added Pardus, a Turkish Distro
+- Added a notice to the users to try `proot-distro-tui-u`
 
 1.9:
 
@@ -53,8 +59,8 @@ Check Issues Page. Spam there..
 
 **Future:**
 
-- [✓] Making Termux:API present in Version `2.0`, i think.
-- [✓] Install Termux:API Here: [Link](https://github.com/termux/termux-api)
+- [ ] Making Termux:API present in Version `2.0`, i think.
+- [ ] Install Termux:API Here: [Link](https://github.com/termux/termux-api)
 
 ## SUGGESTIONS
 

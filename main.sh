@@ -26,7 +26,7 @@ exec 3>&1
 menu=$( dialog \
   --backtitle "$BT" \
   --title "Main Menu" \
-  --menu "Proot-Distro TUI Menu." 25 45 7 \
+  --menu "WARNING: THIS PROOT-DISTRO-TUI FEATURES ARE GETTING OUTDATED\nPROOT-DISTRO-TUI-U HAS A LOT OF FEATURES NOT PRESENT IN HERE CURRENTLY, SO PLEASE GRAB THE COPY OF PROOT-DISTRO-TUI-U AND EXPERIENCE LAUNCHING DISTROS BETTER\nhttps://github.com/SUFandom/proot-distro-tui-u\n\nProot-Distro TUI Menu." 25 45 7 \
   "1" "Install/Run Distro"  \
   "2" "Uninstall Distro"  \
   "3" "Help"  \
@@ -77,11 +77,10 @@ case $menu in
  ;;
  6)
  #Hey Forker! Change this to your info. but at help/about.text, only type the fields recommend there
- output=$(echo "Version 1.9 , Under GPL 3.0. \
+ output=$(echo "Version 1.9.1 , Under GPL 3.0. \
    It Perfectly Runs on Dialog \
    Author: SUFandom \
    Creator: SUFandom \
-   Link (YT): https://bit.ly/BlzYT_SUF \
    Reddit: https://reddit.com/u/itsfreepizza " )
  display_src "About"
  ./main.sh

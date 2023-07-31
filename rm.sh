@@ -22,9 +22,10 @@ UX=$( dialog --backtitle "Remove" \
   "3" "Debian" \
   "4" "Fedora" \
   "5" "Manjaro (AARCH64)" \
-  "6" "OpenSUSe" \
-  "7" "Ubuntu" \
-  "8" "Void" \
+  "6" "OpenSUSE" \
+  "7" "Pardus"
+  "8" "Ubuntu" \
+  "9" "Void" \
   2>&1 1>&3 \
   )
 exitvariable=$?
@@ -93,7 +94,15 @@ else
 ./rm.sh
 fi
 ;;
-7)
+ 7)
+ if ( dialog --backtitle "$BT" --title "Pardus" --yes-label "Run\!" --no-label "Back" --yesno "Are you sure to remove Pardus?" 0 0 )
+ then 
+ ./runtime/undistro/pardus.sh 
+ else
+ ./rm.sh
+ fi
+ ;;
+8)
 if (dialog --backtitle "Oh no\!" --title "Are you sure?" --yes-label "Remove it\!" --no-label "Back" --yesno "Are you sure to Remove Ubuntu?" 0 0 )
 then
 tput cnorm
@@ -102,7 +111,7 @@ else
 ./rm.sh
 fi
 ;;
-8)
+9)
 if (dialog --backtitle "Oh no\!" --title "Are you sure?" --yes-label "Remove it\!" --no-label "Back" --yesno "Are you sure to Remove Void?" 0 0 )
 then 
 tput cnorm

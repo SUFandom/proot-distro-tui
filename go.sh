@@ -22,8 +22,9 @@ DISTROLINUX=$( dialog --backtitle "$BT" \
   "4" "Fedora" \
   "5" "Manjaro (ARM64 Only)" \
   "6" "OpenSuse" \
-  "7" "Ubuntu" \
-  "8" "Void Linux" \
+  "7" "Pardus" \
+  "8" "Ubuntu" \
+  "9" "Void Linux" \
   2>&1 1>&3 \
   )
 exitvalue=$?
@@ -92,14 +93,22 @@ then
  fi
  ;;
  7)
- if ( dialog --backtitle "$BT" --title "Ubuntu" --yes-label "Run\!" --no-label "Back" --yesno "Ubuntu is the modern, open source operating system on Linux for the enterprise server, desktop, cloud, and IoT. (Same with Debian, LLVMPIPE is Disabled by Default under ARM, You cant run software that rely on OpenGL Render. Unless you type an extra command or You have Adreno GPU" 0 0  )
+ if ( dialog --backtitle "$BT" --title "Pardus" --yes-label "Run\!" --no-label "Back" --yesno "Pardus\nA turkish Distro based on Debian" 0 0 )
+ then 
+ ./runtime/distro/pardus.sh 
+ else
+ ./go.sh
+ fi
+ ;;
+ 8)
+ if ( dialog --backtitle "$BT" --title "Ubuntu" --yes-label "Run\!" --no-label "Back" --yesno "Ubuntu is the modern, open source operating system on Linux for the enterprise server, desktop, cloud, and IoT. \n NOTE: IF YOUR DEVICE HAS AN ADRENO 7xx, PLEASE USE PROOT-DISTRO-TUI-U INSTEAD FOR BETTER COMPATIBILITY WITH INSTRUCTIONS ON HOW TO INSTALL MESA" 0 0  )
  then
  ./runtime/distro/ubuntu.sh
  else
  ./go.sh
  fi
  ;;
- 8)
+ 9)
  if ( dialog --backtitle "$BT" --title "Void Linux" --yes-label "Run\!" --no-label "Back" --yesno "Void Linux is an independent Linux distribution that uses the X Binary Package System package manager, which was designed and implemented from scratch, and the runit init system" 0 0 )
  then
  ./runtime/distro/void.sh
